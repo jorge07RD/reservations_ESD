@@ -1,0 +1,32 @@
+<odoo>
+    <data>
+        <!-- Action for specialty -->
+
+        <record id="action_reservations_specialty" model="ir.actions.act_window">
+            <field name="name">Specialties</field>
+            <field name="res_model">reservations.specialty</field>
+            <field name="view_mode">tree</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to add a new specialty
+                </p>
+            </field>
+        </record>
+        <!-- Form View for specialty -->
+
+        <record id="view_reservations_specialty_tree" model="ir.ui.view">
+            <field name="name">reservations.specialty.tree</field>
+            <field name="model">reservations.specialty</field>
+            <field name="arch" type="xml">
+                <tree editable="top">
+                    <field name="name"/>
+                    <field name="area"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+
+    <menuitem id="menu_specialty" name="specialty" parent="reservation_menu" action="action_reservations_specialty"/>
+
+</odoo>

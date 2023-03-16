@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_reservations_reservations,reservations.reservations,model_reservations_reservations,base.group_user,1,1,1,1
+access_reservations_doctors,reservations.doctors,model_reservations_doctors,base.group_user,1,1,1,1
+access_reservations_specialty,reservations.specialty,model_reservations_specialty,base.group_user,1,1,1,1
